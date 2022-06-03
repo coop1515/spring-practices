@@ -5,7 +5,7 @@
 		<artifactId>spring-practices</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>hellospring</artifactId>
+	<artifactId>emaillist03</artifactId>
 	<packaging>war</packaging>
 	
 	<properties>
@@ -31,6 +31,13 @@
 			<version>${org.springframework-version}</version>
 		</dependency>
 		
+		<!-- MariaDB JDBC Driver -->
+		<dependency>
+			<groupId>org.mariadb.jdbc</groupId>
+			<artifactId>mariadb-java-client</artifactId>
+			<version>2.7.5</version>
+		</dependency>
+		
 		<!-- JSTL -->
 		<dependency>
 			<groupId>jstl</groupId>
@@ -54,7 +61,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>hellospring</finalName>
+		<finalName>emaillist03</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -67,11 +74,12 @@
 				<version>1.1</version>
 				<configuration>
 					<url>http://192.168.10.45:8080/manager/text</url>
-					<path>/hellospring</path>
+					<path>/emaillist03</path>
 					<username>admin</username>
 					<password>manager</password>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
+	
 </project>
