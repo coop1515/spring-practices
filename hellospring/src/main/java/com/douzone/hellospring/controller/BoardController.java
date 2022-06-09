@@ -26,8 +26,7 @@ public class BoardController {
 	public String writeForm() {
 		return "BoardController.writeForm()";
 	}
-
-//
+	
 //	@ResponseBody
 //	@RequestMapping("/board/view")
 //	public String view(int no) {
