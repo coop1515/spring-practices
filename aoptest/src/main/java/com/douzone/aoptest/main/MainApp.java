@@ -1,6 +1,7 @@
 package com.douzone.aoptest.main;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.douzone.aoptest.service.ProductService;
@@ -15,5 +16,7 @@ public class MainApp {
 //		 System.out.println(ps);
 		 ProductVo vo = ps.find("TV");
 		 System.out.println(vo);
+		 
+		 ((AbstractApplicationContext)ac).close();
 	}
 }
