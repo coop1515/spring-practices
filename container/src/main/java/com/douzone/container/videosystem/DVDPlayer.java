@@ -14,7 +14,7 @@ public class DVDPlayer {
 		return dvd.play();
 	}
 	
-	public DVDPlayer(DigitalVideoDisc dvd) {
+	public DVDPlayer(DigitalVideoDisc dvd)  { // 괄호안의 dvd가 argument name
 		this.dvd = dvd;
 	}
 	
