@@ -22,4 +22,3 @@ public class DVDPlayerMixingConfig02Test {
 		assertNotNull(dvdPlayer);
 	}
 }
-
